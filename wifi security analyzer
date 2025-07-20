@@ -1,0 +1,48 @@
+Wireless networks (Wi-Fi) are integral to modern connectivity but often present significant security risks. A Wi-Fi Security Analyzer is a tool or framework used to assess the vulnerabilities, configuration issues, and threat vectors associated with wireless networks.
+Identify insecure Wi-Fi networks.
+
+Detect unauthorized access points (Rogue APs).
+
+Analyze encryption protocols and configurations.
+
+Detect MAC spoofing and deauthentication attacks.
+
+Monitor network traffic for suspicious activity.
+
+Tool	Description
+Aircrack-ng	Suite for auditing wireless networks. Includes tools for packet capture, password cracking, and replay attacks.
+Wireshark	Network protocol analyzer for capturing and inspecting packets in real-time.
+Kismet	Wireless network detector, sniffer, and intrusion detection system.
+Reaver	Used to exploit WPS vulnerabilities.
+NetSpot	Visual Wi-Fi analyzer and site survey tool.
+Wifite	Automated wireless attack tool targeting WEP/WPA/WPS.
+
+
+Step 1: Reconnaissance
+Scan for available networks (SSID, BSSID, channel).
+
+Identify encryption protocols (WEP, WPA, WPA2, WPA3).
+
+Step 2: Traffic Capture
+Use monitor mode to capture packets (e.g., with airodump-ng).
+
+Analyze beacon frames, probe requests, and data packets.
+
+Step 3: Vulnerability Assessment
+Check for weak passwords or outdated encryption (e.g., WEP).
+
+Test WPS PIN with Reaver.
+
+Look for open or poorly configured guest networks.
+
+Step 4: Attack Simulation (Ethical Use Only)
+Deauthentication attack to test response to spoofing (e.g., aireplay-ng).
+
+Handshake capture for WPA/WPA2 cracking.
+
+Step 5: Reporting
+Document SSID vulnerabilities.
+
+Summarize risk levels.
+
+Recommend mitigations (e.g., switch to WPA3, disable WPS, use MAC filtering, etc.).
